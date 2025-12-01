@@ -1,1 +1,1 @@
-print("Hello again!")
+print("Test z Git Bash")
