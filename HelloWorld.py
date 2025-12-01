@@ -1,1 +1,1 @@
-print("Test z Git Bash")
+print("Druhy test z Git Bash")
