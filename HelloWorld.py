@@ -1,1 +1,1 @@
-print("Druhy test z Git Bash")
+print("Toto je můj první push po nastavení repozitaře!")
