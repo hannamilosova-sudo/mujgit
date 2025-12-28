@@ -25,9 +25,10 @@ jobs:
       - name: Generate and check output
         run: |
           output="Pass"
-          if [ "$output" = "Fail" ]; then
+          if [ "$output" = "Pass" ]; then
             echo "Everything is good"
           else
             echo "Something went wrong"
             exit 1
           fi
+
