@@ -1,3 +1,10 @@
+"""
+Projekt: Moje kalkulacka
+autor: Hanna
+Popis. Jednoducha kalkulačka s funkcemi pro sčítání, odečítání,
+ násobení, dělení.
+
+"""
 def soucet(a, b):
     """
     Sečte dvě čísla.
