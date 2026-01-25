@@ -1,10 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Moje kalkulačka</title>
 </head>
 <body>
-$END$
+
+<h1>Moje kalkulačka</h1>
+
+<input type="number" id="a">
+<input type="number" id="b">
+
+<br><br>
+
+<button onclick="spocitej('+')">+</button>
+<button onclick="spocitej('-')">-</button>
+<button onclick="spocitej('*')">*</button>
+<button onclick="spocitej('/')">/</button>
+
+<p>Výsledek: <span id="vysledek"></span></p>
+
+<script>
+function spocitej(operace) {
+    const a = Number(document.getElementById("a").value);
+    const b = Number(document.getElementById("b").value);
+    let vysledek = 0;
+
+    if (operace === "+") vysledek = a + b;
+    if (operace === "-") vysledek = a - b;
+    if (operace === "*") vysledek = a * b;
+    if (operace === "/") vysledek = b !== 0 ? a / b : "Nelze dělit nulou";
+
+    document.getElementById("vysledek").textContent = vysledek;
+}
+</script>
+
 </body>
 </html>
